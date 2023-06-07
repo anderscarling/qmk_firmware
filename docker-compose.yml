@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  qmk:
+    build: .
+    working_dir: /src/
+    volumes:
+      - .:/src
+      - ./config:/root/.config/qmk
