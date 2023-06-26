@@ -65,9 +65,3 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     return true;
 }
-
-const key_override_t ko_ctrl_backspace_to_delete = ko_make_basic(MOD_MASK_CTRL, KC_BACKSPACE, KC_DEL);
-const key_override_t **key_overrides = (const key_override_t *[]){
-	&ko_ctrl_backspace_to_delete,
-	NULL
-};
